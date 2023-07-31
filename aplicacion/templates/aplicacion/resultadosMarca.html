@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Busqueda</title>
+</head>
+<body>
+    versiones de la marca {{ marca }}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Año</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for auto in autos %}
+        <tr>
+            <td>{{auto.id}}</td>
+            <td>{{auto.marca}}</td>
+            <td>{{auto.version}}</td>
+            <td>{{auto.anio}}</td>
+            <td>{{auto.color}}</td>
+    
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>

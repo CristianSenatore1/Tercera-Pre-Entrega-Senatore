@@ -1,0 +1,44 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+
+
+
+{% block titulo %}
+    Autos
+{% endblock titulo %}
+    
+
+{% block cabecera %}
+    Listado de Autos
+{% endblock cabecera %}
+
+{% block contenido %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Año</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for auto in autos %}
+    <tr>
+        <td>{{auto.id}}</td>
+        <td>{{auto.marca}}</td>
+        <td>{{auto.version}}</td>
+        <td>{{auto.anio}}</td>
+        <td>{{auto.color}}</td>
+
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+    
+{% endblock contenido %}
+    
+
+
