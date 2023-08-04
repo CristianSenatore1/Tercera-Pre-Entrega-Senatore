@@ -14,6 +14,8 @@ urlpatterns = [
     path('buscarMarca/', buscarMarca, name="marca"),
     path('buscar2/', buscar2, name="buscar2"),
     path('buscarClientes/', views.buscarClientes, name='buscar_clientes'),
+    path('buscarClientes/', views.buscarClientes, name='buscarClientes'),
+
 
 
 
