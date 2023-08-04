@@ -15,3 +15,8 @@ class AutoForm(forms.Form):
     documantacion = forms.BooleanField()
 
 
+class ClienteForm(forms.Form):
+    nombre = forms.CharField(label="Nombre del cliente", max_length=50, required=True)
+    apellido = forms.CharField(label="Apellido", max_length=50, required=True)
+    dni = forms.IntegerField(label="DNI", required=True)
+    mail = forms.EmailField(label="Correo electrónico", required=True)

@@ -8,10 +8,10 @@
 <body>
     <form action="/aplicacion/buscar2" method="get">
         {% csrf_token %}
-        <input type="text"name="marca" id="marca">
+        {{ form.as_table }}
         <input type="submit" value="Buscar">
     </form>
 </body>
 </html>
 
-/aplicacion/buscar2
+
