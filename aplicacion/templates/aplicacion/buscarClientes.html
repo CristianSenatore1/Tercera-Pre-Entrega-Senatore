@@ -7,8 +7,9 @@
 </head>
 <body>
     <form action="/aplicacion/buscar2" method="get">
-        {% csrf_token %}
         {{ form.as_table }}
+
+        {% csrf_token %}
         <input type="submit" value="Buscar">
     </form>
 </body>
