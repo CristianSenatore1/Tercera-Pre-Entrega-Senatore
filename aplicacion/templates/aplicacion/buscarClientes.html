@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador</title>
-</head>
-<body>
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+
+{% block titulo %}Buscador{% endblock titulo %}
+
+{% block contenido %}
+    <h1>Bienvenido al Buscador</h1>
     <form action="/aplicacion/buscar2" method="get">
         {{ form.as_table }}
-
         {% csrf_token %}
         <input type="submit" value="Buscar">
     </form>
-</body>
-</html>
-
+{% endblock contenido %}
 
