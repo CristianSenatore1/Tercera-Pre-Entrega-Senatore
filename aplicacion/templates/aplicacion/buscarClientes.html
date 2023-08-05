@@ -6,8 +6,12 @@
 {% block contenido %}
     <h1>Bienvenido al Buscador</h1>
     <form action="/aplicacion/buscar2" method="get">
-        {{ form.as_table }}
         {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+
+        </table>
+        
         <input type="submit" value="Buscar">
     </form>
 {% endblock contenido %}
