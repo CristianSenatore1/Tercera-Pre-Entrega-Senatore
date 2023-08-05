@@ -1,11 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendedores</title>
-</head>
-<body bgcolor="green">
-    <h1>Vendedores</h1>
-</body>
-</html>
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+
+{% block titulo %}
+    Vendedores
+{% endblock titulo %}
+
+{% block cabecera %}
+    Listado de Vendedores
+{% endblock cabecera %}
+
+{% block contenido %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Legajo</th>
+            <th>Mail</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for cliente in clientes %}
+    <tr>
+        <td>{{cliente.id}}</td>
+        <td>{{cliente.nombre}}</td>
+        <td>{{cliente.apellido}}</td>
+        <td>{{cliente.legajo}}</td>
+        <td>{{cliente.mail}}</td>
+
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+    
+{% endblock contenido %}

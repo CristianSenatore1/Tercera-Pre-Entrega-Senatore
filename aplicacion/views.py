@@ -35,7 +35,10 @@ def buscarClientes(request):
 
 
 def vendedores(request):
-    return render(request, "aplicacion/vendedores.html")
+    ctx = { "clientes":  Vendedores.objects.all(),}
+    return render(request, "aplicacion/vendedores.html", ctx )
+
+
 
 
 def autoForm (request):
