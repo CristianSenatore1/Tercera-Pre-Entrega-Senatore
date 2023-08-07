@@ -15,7 +15,8 @@ Para un correcto funcionamiento, deberas seguir los siguientes pasos:
 
 1. Clona el repositorio desde GitHub: git clone https://github.com/CristianSenatore1/Tercera-Pre-Entrega-Senatore.git
 2. Crea y activa un entorno virtual (se recomienda usar `venv`).
-3. Desde la terminal, deberas ejecutar el servidor: python manage.py runserver, para poder visualizar la pagina desde tu web
+3. Desde la terminal, deberas ejecutar el servidor: python manage.py runserver, para poder visualizar la pagina desde tu web.
+4. Deben tener instalado también lo que está en requirements.txt, En el caso de que estes usando entornos virtuales debes activarlo primero para ejecutar el comando, en caso de que no, no hay problema
 
 ## Modo de Uso:
 Podras optar por 2 modos de usar la pagina, ya sea como cliente o como administrador (2da opcion solo valida para tutor con usuario y contraseña).
